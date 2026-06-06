@@ -3,25 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="/src/style.css" />
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar-Style</title>
   </head>
   <body>
+    <!-- Main container -->
     <div class="container">
+      <!-- Header section with logo, navigation, and buttons -->
       <header class="header">
-        <img src="src/assets/nav.svg" alt="">
+        <!-- Logo image -->
+        <img class="logo" src="src/assets/nav.svg" alt="Logo" />
+        <!-- Navigation menu -->
         <nav class="navbar">
           <ul class="navbar-list">
+            <!-- Navigation links -->
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Projects</a></li>
           </ul>
         </nav>
+        <!-- Button group for authentication -->
+        <div class="btn-container">
+          <button class="btn" id="sign-in">Sign in</button>
+          <button class="btn" id="sign-up">Sign up</button>
+        </div>
       </header>
     </div>
 
+    <!-- JavaScript module "We didn't need any JavaScript"-->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
