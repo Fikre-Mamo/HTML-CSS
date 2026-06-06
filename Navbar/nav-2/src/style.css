@@ -1,0 +1,19 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Root font size for responsive scaling */
+html {
+    font-size: 62.5%;;
+}
+
+/* Dark background for the page */
+body {
+    background: #000000;
+}
