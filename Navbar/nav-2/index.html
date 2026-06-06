@@ -3,28 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Link to CSS stylesheet -->
     <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nav-2</title>
   </head>
   <body>
+    <!-- Main container -->
     <div class="container">
+      <!-- Header section with navigation -->
       <header class="header">
-        <a href="#"><img class="logo" src="src/assets/nav.svg" alt="Logo"/></a>
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Projects</a></li>
-          </ul>
-        </nav>
-        <div class="btn-container">
-          <button class="btn" id="sign-in">Sign in</button>
-          <button class="btn" id="sign-up">Sign up</button>
+        <div class="nav-container">
+          <!-- Logo with styled text -->
+          <a class="logo" href="#">Spyder <span class="logo-text">Woman</span></a>
+          <!-- Navigation menu -->
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <!-- Navigation links -->
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+          <!-- Subscribe button -->
+          <button type="button" class="btn" id="sign-in">Subscribe</button>
         </div>
       </header>
+      <!-- Hero section with main content -->
+      <main class="hero-section">
+        <div class="hero-content">
+        <!-- Main title -->
+        <h1 class="hero-title">Gwen Stacy</h1>
+        <!-- Hero text with quote icon and highlighted text -->
+        <p><span><img class="quote-icon" src="./src/assets/quotes.svg" alt=""></span> So don't waste it living someone else's life, <span class="span">make yours count for something</span>. Fight for what matters to you, no matter what.</p>
+        <!-- Call to action button -->
+        <button type="button" class="btn" id="learn-more">Learn More</button>
+        </div>
+      </main>
     </div>
+    <!-- JavaScript module -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

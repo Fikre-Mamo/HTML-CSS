@@ -1,19 +1,151 @@
 /* ===== Global Styles ===== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 /* Root font size for responsive scaling */
 html {
-    font-size: 62.5%;;
+    font-size: 62.5%;
 }
 
-/* Dark background for the page */
+/* Background image styling */
 body {
-    background: #000000;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    width: 100%;
+    padding: 0.4rem 1rem;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/spyder.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* Logo styling */
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Logo span text color styling */
+.logo-text {
+    color: rgb(192, 48, 232);
+}
+
+/* Main container with max width constraint */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* Navigation container with glass morphism effect */
+.nav-container {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+/* Navigation list styling */
+.navbar-list {
+    display: flex;
+    gap: 3rem;
+    font-size: 2rem;
+}
+
+/* Navigation links - default state */
+.navbar-list a {
+    color: #141313;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Navigation links hover state */
+.navbar-list a:hover {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgba(179, 21, 223, 0.8);
+}
+
+/* Navigation links active state */
+.navbar-list a:active {
+    color: #c56cf0;
+    font-weight: 600;
+}
+
+/* Button styling - default state */
+.btn {
+    background: #cd77f8;
+    border-radius: 999px;
+    padding: 0.8rem 1.8rem;
+    transition: all 0.3s ease;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Button hover state */
+.btn:hover {
+    background: #bb39fc;
+    color: #f7f7f7;
+    transform: translateY(-2px);
+}
+
+/* Button active state */
+.btn:active {
+    background: #bb39fc;
+    color: #f7f7f7;
+    transform: translateY();
+}
+
+/* Hero section container */
+.hero-section {
+    position: relative;
+}
+
+/* Hero content area - centered layout */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 300px;
+    margin-top: 100px;
+    padding: 15rem;
+}
+
+/* Hero title styling */
+.hero-title {
+    font-size: 6.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Hero paragraph text */
+.hero-content p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+/* Highlighted span text color */
+.span {
+    color: #bb39fc;
+    font-weight: 700;
+}
+
+/* Quote icon styling */
+.quote-icon {
+    width: 6.8rem;
+    height: 6.8rem;
 }
