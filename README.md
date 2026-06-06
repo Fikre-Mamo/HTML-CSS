@@ -1,2 +1,2 @@
 # HTML & CSS projecs
-Hicontains, and this repo contain some HTML and CSS project that I am working on now, it may also include some JavaScript also for some advance project.
+Hi, folks! This repository contains HTML and CSS projects that I'm currently working on. As I progress, you'll also find JavaScript in some of the more advanced projects.
